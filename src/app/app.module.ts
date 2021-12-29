@@ -8,6 +8,7 @@ import { HeaderComponent } from './features/header/header.component';
 import { FooterComponent } from './features/footer/footer.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PerDaysPhotosComponent } from './pages/per-days-photos/per-days-photos.component';
+import { ListImagesComponent } from './features/list-images/list-images.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PerDaysPhotosComponent } from './pages/per-days-photos/per-days-photos.
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    PerDaysPhotosComponent
+    PerDaysPhotosComponent,
+    ListImagesComponent
   ],
   imports: [
     BrowserModule,
