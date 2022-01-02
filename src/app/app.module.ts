@@ -9,6 +9,7 @@ import { FooterComponent } from './features/footer/footer.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PerDaysPhotosComponent } from './pages/per-days-photos/per-days-photos.component';
 import { ListImagesComponent } from './features/list-images/list-images.component';
+import { ListImagesItemComponent } from './list-images-item/list-images-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListImagesComponent } from './features/list-images/list-images.componen
     FooterComponent,
     ContactComponent,
     PerDaysPhotosComponent,
-    ListImagesComponent
+    ListImagesComponent,
+    ListImagesItemComponent
   ],
   imports: [
     BrowserModule,

@@ -6,12 +6,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./list-images.component.css']
 })
 export class ListImagesComponent implements OnInit {
-@Input() imageURL: string = "";
-
+  
   constructor() { }
+  
+  @Input() id: string = "";
+  @Input() url: string = "";
+  // @Input() marsPhotos: [] = [];
 
   ngOnInit(): void {
-    console.log(this.imageURL)
+    console.log(this.id)
+    console.log(this.url)
   }
 
 }

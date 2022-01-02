@@ -6,6 +6,8 @@
 <ul>
     <app-list-images
     *ngFor="let photo of marsPhotos"
-    [imageURL]="photo.img_src"
+    [id]="photo.id"
+    [url]="photo.img_src"
     ></app-list-images>
+    <!-- <app-list-images [marsPhotos]="marsPhotos"></app-list-images> -->
 </ul>
