@@ -19,7 +19,10 @@ export class PerDaysPhotosComponent implements OnInit {
     //   {id:"2", img_src:"https://www.cieletespace.fr/media/default/0001/19/SURFACE_MARS_900-5f1a.jpeg"},
     //   {id:"3", img_src:"https://dailygeekshow.com/wp-content/uploads/2020/05/une-mars-riviere.jpeg"}
     // )
-    this.marsPhotos = this.MarsImagesService.getMarsImages()
+    // this.marsPhotos = this.MarsImagesService.getMarsImagesFromAPI()
+    this.MarsImagesService.getMarsImagesFromAPI().subscribe(data => {
+     console.log(data)
+     this.marsPhotos = data;
+    })
   }
-
 }

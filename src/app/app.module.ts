@@ -12,6 +12,7 @@ import { ListImagesComponent } from './features/list-images/list-images.componen
 import { ListImagesItemComponent } from './list-images-item/list-images-item.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MarsImagesService } from './core/services/marsImages.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MarsImagesService } from './core/services/marsImages.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [
     MarsImagesService

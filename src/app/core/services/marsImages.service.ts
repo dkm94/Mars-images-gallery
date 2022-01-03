@@ -1,13 +1,25 @@
 import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
     providedIn: 'root'
   })
 
   export class MarsImagesService {
-      constructor(){
 
-      }
+      constructor(private http:HttpClient){
+    }
+
+    apiKey = "P9cxIDnheanzMt6sgXrOJ94T1qz5OEsd1j9uts2o";
+    apiURL = "https://api.nasa.gov/planetary/apod?api_key=P9cxIDnheanzMt6sgXrOJ94T1qz5OEsd1j9uts2o";
+    apiMarsRoverURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-10-15&api_key="
+    
+    // getData(){
+    //     let url = `${this.apiMarsRoverURL}${this.apiKey}`;
+    //     console.log(this.http.get(url));
+    //     return this.http.get(url);
+    // }
+
 
       marsImages = [
         {
@@ -23,8 +35,11 @@ import { Injectable } from "@angular/core";
             img_src:"https://dailygeekshow.com/wp-content/uploads/2020/05/une-mars-riviere.jpeg"}
       ]
 
-      getMarsImages(){
-          console.log(this.marsImages)
-          return this.marsImages
+      getMarsImagesFromAPI(){
+        //   console.log(this.marsImages)
+        //   return this.marsImages
+        let url = `${this.apiMarsRoverURL}${this.apiKey}`;
+        console.log(this.http.get(url));
+        return this.http.get(url);
       }
   }
