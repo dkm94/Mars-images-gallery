@@ -1,7 +1,9 @@
-<ul>
-    <li><a routerLink="/home" >Home</a></li>
-    <li><a>Photos par jour</a></li>
-    <li><a routerLink="/per-days-photos">Galerie</a></li>
-    <li><a routerLink="/contact" >Contact</a></li>
-</ul>
-<span>Mars Gallery © 2021</span>
+<div [ngStyle]="{'display' : 'flex', 'flex-direction': 'column', 'padding-left.%':'10', 'padding-right.%':'10', 'padding-bottom.px':'50', 'align-items':'center'}" >
+    <nav [ngStyle]="{'list-style-type': 'none', 'color':'grey'}">
+        <li [ngStyle]="{'display' : 'inline-block', 'padding.px': 20}"><a routerLink="/home" >Home</a></li>
+        <li [ngStyle]="{'display' : 'inline-block', 'padding.px': 20}"><a>Photos par jour</a></li>
+        <li [ngStyle]="{'display' : 'inline-block', 'padding.px': 20}"><a routerLink="/per-days-photos">Galerie</a></li>
+        <li [ngStyle]="{'display' : 'inline-block', 'padding.px': 20}"><a routerLink="/contact" >Contact</a></li>
+    </nav>
+    <span [ngStyle]="{'color':'darkgrey'}">Mars Gallery © 2021</span>
+</div>
