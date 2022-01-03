@@ -11,6 +11,7 @@ import { PerDaysPhotosComponent } from './pages/per-days-photos/per-days-photos.
 import { ListImagesComponent } from './features/list-images/list-images.component';
 import { ListImagesItemComponent } from './list-images-item/list-images-item.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MarsImagesService } from './core/services/marsImages.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    MarsImagesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
