@@ -1,0 +1,13 @@
+<app-header></app-header>
+<title>Photos par jour</title>
+<h1>Dans cette page vous pouve chercher les photos de Mars du jour</h1>
+<h2>Veuillez rentrer la date:</h2>
+<form></form>
+<ul>
+    <app-list-images
+    *ngFor="let photo of marsPhotos.photos"
+    [id]="photo.id"
+    [url]="photo.img_src"
+    ></app-list-images>
+    <!-- <app-list-images [marsPhotos]="marsPhotos"></app-list-images> -->
+</ul>

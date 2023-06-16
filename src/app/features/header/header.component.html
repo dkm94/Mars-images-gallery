@@ -1,0 +1,14 @@
+<div [ngStyle]="{'display' : 'flex', 'justify-content' : 'space-around', 'padding-left.px' : 100, 'padding-right.px' : 100, 'width.%': 100, 'height.rem' : 5, 'margin-top.px': 15}" >
+    <div [ngStyle]="{'display': 'flex'}">
+        <img src="https://i.pinimg.com/564x/bb/23/92/bb2392eda3091663fa9b4dcead8a1bf9.jpg" [ngStyle]="{'height.rem' : 5}" >
+        <span [ngStyle]="{'margin-left.px': 20, 'font-size.rem' : 2, 'place-self': 'center' }">Mars Gallery</span>
+    </div>
+    <nav [ngStyle]="{'height' : 'inherit', 'display' : 'flex', 'align-items' : 'center'}">
+        <ul ngbNav #nav="ngbNav" class="nav-tabs" [ngStyle]="{'float' : 'right'}">
+            <li ngbNavItem><a ngbNavLink routerLink="/home" >Home</a></li>
+            <li ngbNavItem><a ngbNavLink>Photos par jour</a></li>
+            <li ngbNavItem><a ngbNavLink routerLink="/per-days-photos">Galerie</a></li>
+            <li ngbNavItem><a ngbNavLink routerLink="/contact" >Contact</a></li>
+        </ul>
+    </nav>
+</div>
